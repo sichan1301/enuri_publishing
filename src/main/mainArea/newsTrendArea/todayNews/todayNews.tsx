@@ -18,5 +18,5 @@ export default TodayNews
 
 const Container = styled.div`
   padding:20px;
-  width:440px;
+  width:430px;
 `

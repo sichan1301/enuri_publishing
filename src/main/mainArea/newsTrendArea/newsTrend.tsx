@@ -23,7 +23,7 @@ export default NewsTrendArea
 
 const Container = styled.div`
   margin-left: 20px;
-  width:1100px;
+  width:1000px;
 `
 
 const NewsTrend = styled.article`

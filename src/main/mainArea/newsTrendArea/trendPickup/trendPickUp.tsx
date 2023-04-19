@@ -6,13 +6,16 @@ const TrendPickUp = () => {
   return(
     <Container>
       <Img src="image/cost.jpg" />
+
       <TrendPickUpList>
-        <header>
+        
+        <Header>
           <h3>트랜드픽업</h3>
           <span>1/10</span>
           <Icon icon = {faChevronLeft} />
           <Icon icon = {faChevronRight} />
-        </header>
+        </Header>
+
         <ul>
           <li>녹십초 건강식품 기획전</li>
           <li>그래픽카드는 Nvidia!</li>
@@ -24,6 +27,7 @@ const TrendPickUp = () => {
           <li>음식물처리기로 해결해봄!</li>
           <li>티몬 LG전자 브랜드위크</li>
         </ul>
+
       </TrendPickUpList>
     </Container>
   )
@@ -33,33 +37,17 @@ export default TrendPickUp
 
 const Container = styled.div`
   display:flex;
+  width:570px;
 `
 
 const Img = styled.img`
-  width:440px;
+  width:70%;
   height:100%;
   border:1px solid rgb(178, 178, 178);
 `
 
 const TrendPickUpList = styled.ul`
-
-  header{
-    color:#fff;
-    padding:12px;
-    h3{
-      margin:0;
-    }
-    background-color: rgb(178, 178, 178);
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
-    span{
-      padding:5px 10px;
-      border:0.5px solid rgb(233, 228, 228);
-      border-radius:20px;
-    }
-  }
-
+  width:30%;
   ul{
     li{
       padding:15px;
@@ -69,10 +57,28 @@ const TrendPickUpList = styled.ul`
   }
 `
 
+const Header = styled.header`
+  background-color: rgb(178, 178, 178);
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  color:#fff;
+  padding:12px;
+  h3{
+      font-size:13px;
+      margin:0;
+    }
+  span{
+    padding:3px 6px;
+    border:0.5px solid rgb(233, 228, 228);
+    border-radius:20px;
+    font-size:8px;
+  }
+`
 
 const Icon = styled(FontAwesomeIcon)`
   color: #d7d7d7;
-  font-size: 15px;
+  font-size: 10px;
   cursor: pointer;
   margin: 0;
 `;

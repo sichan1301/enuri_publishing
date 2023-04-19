@@ -11,7 +11,6 @@ const Header = () => {
         <li>컴퓨터</li>
         <li>자동차</li>
         <li>라이프</li>
-        <li>구매</li>
       </Menu>
 
       <div>
@@ -31,6 +30,7 @@ const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height:30px;
   h3{
     font-weight:900;
     font-size:16px;
@@ -42,7 +42,7 @@ const Menu = styled.ul`
   margin:0;
   display: flex;
   li{
-    font-size:12px;
+    font-size:10px;
     margin:0 10px;
     padding: 0;
     position:relative;

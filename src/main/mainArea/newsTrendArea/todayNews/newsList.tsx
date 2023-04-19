@@ -22,7 +22,7 @@ const Container = styled.ul`
     position:relative;
     display: inline-block;
     margin: 0 0 8px 0;
-    font-size: 14px;
+    font-size: 12px;
     ::marker{
       color:rgb(191, 191, 191);
       margin:0;

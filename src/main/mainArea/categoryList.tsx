@@ -30,7 +30,7 @@ const Container = styled.aside`
   
   li{
     line-height:50px;
-    height:50px;
+    height:52px;
     padding-left:15px;
     font-size:14px;
     border-top:0.5px solid rgb(180, 180, 181);

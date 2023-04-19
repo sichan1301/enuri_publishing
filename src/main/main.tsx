@@ -1,10 +1,12 @@
 import styled from "styled-components"
 import MainArea from "./mainArea/mainArea"
+import YourType from "./yourType/yourType"
 
 const Main = () => {
   return(
     <Container>
       <MainArea />
+      <YourType />
     </Container>
   )
 }
