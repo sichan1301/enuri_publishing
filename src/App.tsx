@@ -1,9 +1,11 @@
 import './App.css';
+import Header from './header/header';
 
 function App() {
   return (
-    <h1>으어</h1>
-  );
+    <Header />
+    
+  )
 }
 
 export default App;
