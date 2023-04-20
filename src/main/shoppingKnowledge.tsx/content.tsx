@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import Gallery from "../gallery"
-import Video from "../video"
+import Gallery from "./gallery"
+import Video from "./video"
 
 const Content = () => {
   return(

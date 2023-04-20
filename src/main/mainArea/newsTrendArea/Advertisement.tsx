@@ -14,14 +14,15 @@ export default Advertisement
 
 const Container = styled.div`
   height:130px;
-  font-size:50px;
-  padding:40px 60px;
   margin:0 0 20px 0;
   background: rgb(39, 40, 66) url(assets/free.jpg) no-repeat 85% center/contain;
   p{
-    margin:0;
+    font-size:50px;
     font-weight:800;
+    margin:0;
+    padding-left:25px;
     :first-child{
+      padding-top:25px;
       font-size:26px;
       color:rgb(40, 210, 213);
     }

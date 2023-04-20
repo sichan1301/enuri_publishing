@@ -41,6 +41,9 @@ const Container = styled.aside`
 
     :first-child{
       cursor:pointer;
+      color:#fff;
+      background-color:rgb(8, 71, 245); 
+      font-weight: 800;
     }
   }
 `

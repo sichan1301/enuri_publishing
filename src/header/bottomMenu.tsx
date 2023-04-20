@@ -1,38 +1,36 @@
 import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass,faBars } from '@fortawesome/free-solid-svg-icons'
 
 const BottomMenu = () => {
   return(
-    <div>
-      <Inner>
-        <SearchBarArea>
-          <MainLogo src = "/image/cost.jpg"/> 
-          <SearchBar placeholder="똑!똑!한 쇼핑혜택-4월엔 나도 e100만점?!" />
-          <SearchButton icon={faMagnifyingGlass}/>
+    <Container>
+      <SearchBarArea>
+        <a href=""><MainLogo src = "/image/cost.jpg"/></a>
+        <SearchBar placeholder="똑!똑!한 쇼핑혜택-4월엔 나도 e100만점?!" />
+        <SearchButton icon={faMagnifyingGlass}/>
 
-          <AllCategory >
-            <option>전체 카테고리</option>
-          </AllCategory>
+        <AllCategory >
+          <option>전체 카테고리</option>
+        </AllCategory>
 
-          <CenterMenu>
-            <li><a href="">브랜드스토어</a></li>
-            <li><a href="">다이어트보조제</a></li>
-            <li><a href="">#혜택백서</a></li>
-          </CenterMenu>
+        <CenterMenu>
+          <li><a href="">브랜드스토어</a></li>
+          <li><a href="">다이어트보조제</a></li>
+          <li><a href="">#혜택백서</a></li>
+        </CenterMenu>
 
-        </SearchBarArea>    
-            
-        <Advertisement src = "/image/cost.jpg" />
-      </Inner>
-    </div>
+      </SearchBarArea>    
+          
+      <a href=""><Advertisement src = "/image/cost.jpg" /></a>
+    </Container>
   )
 }
 
 export default BottomMenu
 
 
-const Inner = styled.div`
+const Container = styled.div`
   width:1250px;
   padding:20px 0;
   margin:0 auto;
@@ -56,6 +54,14 @@ const MainLogo = styled.img`
 const SearchBar = styled.input`
   width:300px;
   height:35px;
+  :focus{
+    padding-left:10px;
+  }
+
+  ::placeholder{
+    padding-left:8px;
+  }
+  
 `
 
 const SearchButton = styled(FontAwesomeIcon)`
@@ -66,6 +72,7 @@ const SearchButton = styled(FontAwesomeIcon)`
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: rgb(77, 143, 213);
+  cursor:pointer;
 `
 
 const AllCategory= styled.select`
@@ -87,13 +94,12 @@ const CenterMenu= styled.ul`
     }
     display: inline;
     margin: 0 10px;
-    color:#fff;
     font-weight: 800;
     :nth-child(even){
       position:relative;
       :before{
         position:absolute;
-        top:2px;
+        top:4px;
         left:-10px;
         background-color:#c7c7c7;
         content:"";
@@ -102,13 +108,17 @@ const CenterMenu= styled.ul`
       }
       :after{
         position:absolute;
-        top:2px;
+        top:4px;
         right:-10px;
         background-color:#c7c7c7;
         content:"";
         width:2px;
         height:13px;
       }
+
+    }
+    :hover{
+      border-bottom: 1px solid #fff;
     }
   }
 `

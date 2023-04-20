@@ -41,7 +41,9 @@ const Text = styled.div`
 
 const AppDownload = styled(Container)`
   margin:0;
-  width:140px;
+  display:flex;
+  align-items:center;
+  width:170px;
   p{
     font-size:14px;
     margin:0;

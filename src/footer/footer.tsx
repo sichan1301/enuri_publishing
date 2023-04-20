@@ -18,5 +18,4 @@ export default Footer
 
 const Container = styled.footer`
   border-top:1px solid black;
-  height:500px;
 `

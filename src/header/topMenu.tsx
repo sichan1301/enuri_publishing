@@ -73,6 +73,7 @@ const LeftMenu= styled.ul`
     a{
       color: #fff;
     }
+    
   }
 `
 
@@ -80,6 +81,9 @@ export const RightMenu = styled(LeftMenu)`
   li{
     margin:0 10px;
     position:relative;
+    :hover{
+      border-bottom:1px solid #fff;
+    }
     ::before{
       position:absolute;
       top:3px;
@@ -90,6 +94,7 @@ export const RightMenu = styled(LeftMenu)`
       height:13px;
     }
   }
+
 `
 
 const Icon = styled(FontAwesomeIcon)`

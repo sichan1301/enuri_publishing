@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Content from "./content.tsx/content";
+import Content from "./content";
 
 const ShoppingKnowledge = () => {
   return(

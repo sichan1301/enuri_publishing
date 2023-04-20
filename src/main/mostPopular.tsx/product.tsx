@@ -2,45 +2,39 @@ import styled from "styled-components"
 
 const Product = () => {
   return(
-    <Container>
+    <div>
       <ProductImg />
 
       <ProductInfo>
 
         <BrandReview>
-          <Brand>G마켓</Brand>
 
+          <Brand>G마켓</Brand>
+          
           <GradeReview>
             <span>⭐︎</span>
             <Grade>5.0점</Grade>
             <Review>(215건)</Review>
           </GradeReview>
+
         </BrandReview>
 
         <Name>삼성전자 비스포크 무풍에어컨 AF18CX839WSR[공식인증점]</Name>
-        
-
         <LowestPrice>최저가<span>3,299,990</span>원</LowestPrice>
-
 
         <Price>
           <p>최대 0.3% 적립</p>
           <p>가격비교<span>101</span></p>
         </Price>
+
       </ProductInfo>
       
-    </Container>
+    </div>
   )
 }
 
 
 export default Product
-
-
-const Container = styled.div`
-
-`
-
 
 const ProductImg = styled.div`
   width:100%;

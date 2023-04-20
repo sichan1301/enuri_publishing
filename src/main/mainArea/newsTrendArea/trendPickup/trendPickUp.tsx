@@ -17,15 +17,15 @@ const TrendPickUp = () => {
         </Header>
 
         <ul>
-          <li>녹십초 건강식품 기획전</li>
-          <li>그래픽카드는 Nvidia!</li>
-          <li>로지텍 시그니처 특별기획</li>
-          <li>뉴퍼마켓 IT 리포트</li>
-          <li>트윈보스 S9 PRO 마스터!</li>
-          <li>갤럭시북3 울트라!</li>
-          <li>갤럭시탭S8 파격 할인!</li>
-          <li>음식물처리기로 해결해봄!</li>
-          <li>티몬 LG전자 브랜드위크</li>
+          <li><a href="">녹십초 건강식품 기획전</a></li>
+          <li><a href="">그래픽카드는 Nvidia!</a></li>
+          <li><a href="">로지텍 시그니처 특별기획</a></li>
+          <li><a href="">뉴퍼마켓 IT 리포트</a></li>
+          <li><a href="">트윈보스 S9 PRO 마스터!</a></li>
+          <li><a href="">갤럭시북3 울트라!</a></li>
+          <li><a href="">갤럭시탭S8 파격 할인!</a></li>
+          <li><a href="">음식물처리기로 해결해봄!</a></li>
+          <li><a href="">티몬 LG전자 브랜드위크</a></li>
         </ul>
 
       </TrendPickUpList>
@@ -53,6 +53,7 @@ const TrendPickUpList = styled.ul`
       padding:16px;
       border-bottom:0.5px solid rgb(178, 178, 178);
       font-size:12px;
+      cursor:pointer;
     }
   }
 `
