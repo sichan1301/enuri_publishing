@@ -40,14 +40,8 @@ const Container = styled.div`
   
 `
 const Recommend = styled.div`
-  img{
-    width:100%;
-    height:190px;
-  }
+  width:300px;
 
-  p{
-    font-size:12px;
-  }
 `
 
 const Thumbnail = styled.img`

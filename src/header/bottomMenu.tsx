@@ -82,6 +82,9 @@ const CenterMenu= styled.ul`
   margin-left:30px;
   padding:0;
   li{
+    a{
+      color:#fff;
+    }
     display: inline;
     margin: 0 10px;
     color:#fff;

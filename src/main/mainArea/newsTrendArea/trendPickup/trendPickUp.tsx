@@ -50,7 +50,7 @@ const TrendPickUpList = styled.ul`
   width:30%;
   ul{
     li{
-      padding:15px;
+      padding:16px;
       border-bottom:0.5px solid rgb(178, 178, 178);
       font-size:12px;
     }
