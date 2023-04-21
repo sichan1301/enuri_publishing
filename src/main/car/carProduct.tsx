@@ -23,7 +23,7 @@ export default CarProduct
 
 
 const Container = styled.div`
-  border:0.5px solid rgb(176, 176, 176);
+  border:0.5px solid rgb(211, 211, 211);
   padding: 15px;
 `
 

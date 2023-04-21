@@ -82,7 +82,9 @@ export const RightMenu = styled(LeftMenu)`
     margin:0 10px;
     position:relative;
     :hover{
-      border-bottom:1px solid #fff;
+      span{
+        border-bottom:1px solid #fff;
+      }
     }
     ::before{
       position:absolute;

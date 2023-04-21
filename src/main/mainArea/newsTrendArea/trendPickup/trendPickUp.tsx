@@ -17,16 +17,17 @@ const TrendPickUp = () => {
         </Header>
 
         <ul>
-          <li><a href="">녹십초 건강식품 기획전</a></li>
-          <li><a href="">그래픽카드는 Nvidia!</a></li>
-          <li><a href="">로지텍 시그니처 특별기획</a></li>
-          <li><a href="">뉴퍼마켓 IT 리포트</a></li>
-          <li><a href="">트윈보스 S9 PRO 마스터!</a></li>
-          <li><a href="">갤럭시북3 울트라!</a></li>
-          <li><a href="">갤럭시탭S8 파격 할인!</a></li>
-          <li><a href="">음식물처리기로 해결해봄!</a></li>
-          <li><a href="">티몬 LG전자 브랜드위크</a></li>
+          <List as="a" href="">녹십초 건강식품 기획전</List>
+          <List as="a" href="">그래픽카드는 Nvidia!</List>
+          <List as="a" href="">로지텍 시그니처 특별기획</List>
+          <List as="a" href="">뉴퍼마켓 IT 리포트</List>
+          <List as="a" href="">트윈보스 S9 PRO 마스터!</List>
+          <List as="a" href="">갤럭시북3 울트라!</List>
+          <List as="a" href="">갤럭시탭S8 파격 할인!</List>
+          <List as="a" href="">음식물처리기로 해결해봄!</List>
+          <List as="a" href="">티몬 LG전자 브랜드위크</List>
         </ul>
+
 
       </TrendPickUpList>
     </Container>
@@ -44,18 +45,29 @@ const Img = styled.img`
   width:70%;
   height:100%;
   border:1px solid rgb(178, 178, 178);
+  cursor:pointer;
 `
 
-const TrendPickUpList = styled.ul`
+const TrendPickUpList = styled.div`
   width:30%;
-  ul{
-    li{
-      padding:16px;
-      border-bottom:0.5px solid rgb(178, 178, 178);
-      font-size:12px;
-      cursor:pointer;
-    }
+  height:100%;
+`
+
+const List = styled.li`
+  display:block;
+  border-bottom:0.5px solid rgb(178, 178, 178);
+  font-size:14px;
+  width:100%;
+  height:50px;
+  text-align: center;
+  line-height:50px;
+  cursor:pointer;
+
+  :hover{
+    background-color: rgb(224, 239, 255);
+    color:rgb(26, 5, 160);  
   }
+
 `
 
 const Header = styled.header`

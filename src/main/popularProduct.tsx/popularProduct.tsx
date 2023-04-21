@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Container } from "../yourType/yourType"
 import Product from "./product"
 
-const MostPopular = () => {
+const PopularProduct = () => {
   return(
     <Container>
       <h2>지금 잘 나가는 상품</h2>
@@ -20,7 +20,7 @@ const MostPopular = () => {
   )
 }
 
-export default MostPopular
+export default PopularProduct
 
 const ProductList = styled(Container)`
   display: grid;

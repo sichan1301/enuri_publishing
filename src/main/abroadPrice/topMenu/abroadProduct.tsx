@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Product from "../customPC/product"
+import Product from "../../customPC/product"
 
 
 const AbroadProduct = () => {

@@ -19,22 +19,25 @@ const Container = styled.ul`
   border-top: 0.5px solid rgb(215, 215, 215);
   padding:15px;
   li{
-    position:relative;
-    display: inline-block;
+    /* position:relative;
+    display: inline-block; */
     margin: 0 0 8px 0;
     font-size: 12px;
+
     ::marker{
-      color:rgb(191, 191, 191);
+      color:rgb(196, 49, 49);
       margin:0;
     }
-    :before{
+
+    /* :before{
       position:absolute;
       left:-15px;
+      top:3px;
       content:"●";
       color:rgb(215, 215, 215);
       font-size:4px;
-      top:3px;
-    }
+    } */
+
     :hover{
       border-bottom: 1px solid black;
     }

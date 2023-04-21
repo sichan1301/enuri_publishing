@@ -3,15 +3,16 @@ import styled from "styled-components"
 interface ProductProps {
   imgWidth:string,
   imgHeight:string,
-  CategoryDisplay?:boolean,
+  categoryDisplay?:boolean,
   flexDirection:string
 }
-const Product = ({imgWidth,imgHeight,CategoryDisplay,flexDirection}:ProductProps) => {
+const Product = ({imgWidth,imgHeight,categoryDisplay = false,flexDirection}:ProductProps) => {
   return(
     <Container flexDirection ={flexDirection}>
       <Thumbnail src = "image/free.jpg" imgWidth={imgWidth} imgHeight={imgHeight}/>
       <div>
-        <Category CategoryDisplay={CategoryDisplay}>구매가이드</Category>
+        {/* <Category CategoryDisplay={categoryDisplay}>구매가이드</Category> */}
+        { categoryDisplay && <Category>구매가이드</Category> }
         <Title>국민 한팩 비타민</Title>
         <Explain>필요한 영양소만 담아 ~ 에너지 활력 Up!</Explain>
       </div>
@@ -29,7 +30,6 @@ interface ContainerProps {
 const Container = styled.div<ContainerProps>`
   display:flex;
   flex-direction:${props=> props.flexDirection};
-  
 `
 
 interface ThumbnailProps {
@@ -42,11 +42,7 @@ const Thumbnail = styled.img<ThumbnailProps>`
   height:${props => props.imgHeight};
 `
 
-interface CategoryProps {
-  CategoryDisplay?:boolean
-}
-const Category = styled.p<CategoryProps>`
-  display:${props => props.CategoryDisplay ? `none` : `block`};
+const Category = styled.p`
   font-size: 10px;
   color:blue;
 `

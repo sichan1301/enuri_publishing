@@ -41,7 +41,7 @@ const Container = styled.div`
 `
 const Recommend = styled.div`
   width:300px;
-
+  cursor:pointer;
 `
 
 const Thumbnail = styled.img`
@@ -52,6 +52,11 @@ const Thumbnail = styled.img`
 const GalleryTitle = styled.div`
   display:flex;
   align-items: center;
+  p{
+    :hover{
+      border-bottom: 0.5px solid grey;
+    }
+  }
 `
 
 const GalleryList = styled.ul`
@@ -60,4 +65,12 @@ const GalleryList = styled.ul`
 
 const List = styled(GalleryTitle)`
   font-size:8px;
+  cursor:pointer;
+  p{
+    margin-left:5px;
+    :hover{
+      border-bottom: 0.5px solid grey;
+    }
+  }
+    
 `

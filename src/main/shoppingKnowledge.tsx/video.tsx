@@ -19,6 +19,7 @@ const Container = styled.div`
   display:flex;
   height: 33%;
   margin-bottom:10px;
+  cursor:pointer;
 `
 
 const Thumbnail = styled.img`

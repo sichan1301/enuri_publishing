@@ -1,9 +1,7 @@
-import styled from "styled-components"
-import { Inner } from "../car/car"
-import { Container } from "../yourType/yourType"
+import { Inner } from "../../car/car"
 import BrandPoint from "./brandPoint"
 
-const SavingPointByBrand = () => {
+const PointByBrand = () => {
   return(
     <Inner>
       <BrandPoint />
@@ -16,4 +14,4 @@ const SavingPointByBrand = () => {
   )
 }
 
-export default SavingPointByBrand
+export default PointByBrand

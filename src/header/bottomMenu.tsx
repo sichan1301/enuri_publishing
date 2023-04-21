@@ -1,17 +1,29 @@
 import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass,faBars } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const BottomMenu = () => {
   return(
     <Container>
       <SearchBarArea>
         <a href=""><MainLogo src = "/image/cost.jpg"/></a>
-        <SearchBar placeholder="똑!똑!한 쇼핑혜택-4월엔 나도 e100만점?!" />
+        <SearchBar />
         <SearchButton icon={faMagnifyingGlass}/>
 
         <AllCategory >
-          <option>전체 카테고리</option>
+          <option value="전체 카테고리">전체 카테고리</option>
+          <option value="가전/TV">가전/TV</option>
+          <option value="컴퓨터/노트북/조립PC">컴퓨터/노트북/조립PC</option>
+          <option value="태블릿/모바일/디카">태블릿/모바일/디카</option>
+          <option value="스포츠/아웃도어">스포츠/아웃도어</option>
+          <option value="공구/자동차">공구/자동차</option>
+          <option value="가구/인테리어">가구/인테리어</option>
+          <option value="식품/유아/건강">식품/유아/건강</option>
+          <option value="생활/주방용품">생활/주방용품</option>
+          <option value="반려/취미/문구">반려/취미/문구</option>
+          <option value="패션/뷰티">패션/뷰티</option>
+          <option value="명품관">명품관</option>
+
         </AllCategory>
 
         <CenterMenu>
@@ -51,7 +63,7 @@ const MainLogo = styled.img`
   margin-right:20px;
 `
 
-const SearchBar = styled.input`
+const SearchBar = styled.input.attrs({placeholder:"똑!똑!한 쇼핑혜택-4월엔 나도 e100만점?!"})`
   width:300px;
   height:35px;
   :focus{

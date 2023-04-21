@@ -4,12 +4,12 @@ import Product from "./product"
 const ProductList = () => {
   return(
     <Container>
-      <Product imgWidth="300px" imgHeight="170px" flexDirection="column" />
+      <Product imgWidth="300px" imgHeight="170px" flexDirection="column" categoryDisplay />
       <Grid>
-        <Product imgWidth="130px" imgHeight="130px" flexDirection="row" CategoryDisplay/>
-        <Product imgWidth="130px" imgHeight="130px" flexDirection="row" CategoryDisplay/>
-        <Product imgWidth="130px" imgHeight="130px" flexDirection="row" CategoryDisplay/>
-        <Product imgWidth="130px" imgHeight="130px" flexDirection="row" CategoryDisplay/>
+        <Product imgWidth="130px" imgHeight="130px" flexDirection="row" />
+        <Product imgWidth="130px" imgHeight="130px" flexDirection="row" />
+        <Product imgWidth="130px" imgHeight="130px" flexDirection="row" />
+        <Product imgWidth="130px" imgHeight="130px" flexDirection="row" />
       </Grid>
     </Container>
   )

@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Container } from "../yourType/yourType"
 import CompanyList from "./companyList"
 
-const BrandCategory = () => {
+const BrandByCategory = () => {
   return(
     <Inner>
       <CompanyList />
@@ -16,7 +16,7 @@ const BrandCategory = () => {
 }
 
 
-export default BrandCategory
+export default BrandByCategory
 
 const Inner =styled(Container)`
   display: grid;

@@ -46,16 +46,17 @@ const Menu = styled.ul`
     margin:0 10px;
     padding: 0;
     position:relative;
+    cursor:pointer;
     :first-child{
       position:static;
     }
     :before{
       position:absolute;
-      top:3px;
+      top:1px;
       left:-10px;
       background-color:#b4b4b4;
       content:"";
-      width:2px;
+      width:1px;
       height:13px;
     }
   }

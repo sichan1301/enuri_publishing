@@ -61,7 +61,6 @@ const TableRow = styled.tr`
 
 `
 
-
 const TableBody = styled.tbody`
   border-collapse: collapse;
 

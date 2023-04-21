@@ -1,19 +1,14 @@
 import styled from "styled-components"
-import Carousel from "../abroadPrice/carousel"
 import { Container } from "../yourType/yourType"
-import CarProduct from "./carProduct"
+import CarList from "./carList"
 
 const Car = () => {
   return(
     <Container>
       <h2>자동차</h2>
         <Inner>
-          <Carousel />
-          <CarList>
-            <CarProduct />
-            <CarProduct />
-            <CarProduct />
-          </CarList>
+          <Carousel src ="image/free.jpg" />
+          <CarList />
         </Inner>
     </Container>
   )
@@ -26,8 +21,8 @@ export const Inner = styled(Container)`
   display:flex;
 `
 
-const CarList = styled.div`
-  width:840px;
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
+
+const Carousel = styled.img`
+  width:410px;
+  height:320px;
 `
